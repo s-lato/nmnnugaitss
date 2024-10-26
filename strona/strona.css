@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    color: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+}
+
+
+h1 {
+    position: absolute;
+    top: 0;
+    background-color: #1e271e;
+    left: 0;
+    right: 0;
+    padding: 14px;
+    margin: 0;
+    text-align: center;
+}
+
+
+h1 > div {
+    font-size: medium;
+    margin-top: 15px;
+    font-weight: bold;
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+
+/* Tło (ciemne zaciemnienie) */
+.modal-overlay {
+    display: none; /* Domyślnie ukryte */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* Półprzezroczysta czerń */
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Warstwa ponad innymi elementami */
+}
+
+/* Modal */
+.modal {
+    width: 60%;
+    max-width: 400px;
+    height: 30%;
+    background-color: darkred; /* Ciemnoczerwony kolor */
+    border: 15px groove gold;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    z-index: 11; /* Warstwa ponad tłem */
+    color: white;
+    font-size: 150%;
+    text-align: center;
+}
+
+.modal > input {
+    padding: 7px;
+    margin: 10px;
+    text-align: center;
+}
+
+.counter {
+    color: #1e271e;
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie tekstu wewnątrz licznika */
+    align-items: center; /* Wyśrodkowanie tekstu w pionie */
+    background-color: rgb(210, 36, 36); /* Tło licznika */
+    width: 150px; /* Szerokość licznika */
+    height: 150px; /* Wysokość licznika */
+    border: 7px solid gold; /* Złota ramka */
+    border-radius: 50%; /* Okrągłe rogi */
+    font-size: 5em; /* Ustawienie większej czcionki dla licznika */
+    margin: 20px; /* Margines wokół licznika */
+    color: gold;
+}
+
+.liczyk {
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+    width: 400px;  
+}
+
+.liczyk > button {
+    border: none;
+    padding: 10px;
+    width: 180px;
+    height: 40px;
+    border-radius: 50px;
+    color: white;
+    background-color: darkred;
+}
