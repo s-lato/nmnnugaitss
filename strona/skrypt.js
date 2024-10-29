@@ -26,12 +26,5 @@ window.onclick = function(event) {
     if (event.target === modal) {
         zamykamyModalNieJestesmyDorszem();
     }
-}
+};
 
-// window.onclick = function(event) {
-//     const modal = document.getElementById("modal");
-//     // Sprawdź, czy kliknięto poza modalem
-//     if (event.target === modal) {
-//         zamykamyModalNieJestesmyDorszem();
-//     }
-// };
